@@ -13,13 +13,14 @@ html {
     scroll-snap-type: y mandatory;
 }
 /** Scroll Snap**/
+/*
 .servicios,
 .navegacion-principal,
 .formulario {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
-
+*/
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -45,6 +46,7 @@ body {
     width: 90%;
     text-align: center;
     border: none;
+    transition: .2s;
 }
 @media (min-width: 768px) {
     .boton {
@@ -53,6 +55,8 @@ body {
 }
 .boton:hover {
     cursor: pointer;
+    background-color: var(--gris);
+    transition: .2s;
 }
 
 .sombra {
@@ -65,6 +69,8 @@ body {
 /* Tipografia */
 h1 {
     font-size: 3.8rem;
+   
+    
 }
 h2 {
     font-size: 2.8rem;
@@ -245,6 +251,28 @@ h1,h2,h3 {
     padding: 1.5rem;
     border-radius: .5rem;
 }
+
+.container-icons {
+    text-align: center;
+    padding: 20px 20px;
+    border:solid 1px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    color: var(--secundario);
+    width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
+    margin: auto; 
+    margin-bottom: 20px;
+    
+}
+
+a .boton{
+    text-decoration: none;
+    margin: 0px 40px;
+    padding: 0px 40px; 
+    height:100px ;    
+}
+
+
 
 /** Footer **/
 .footer {
