@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo">Paul Correa <span>Desarrolador Jr.</span></h1>
+        
     </header>
 
     <div class="nav-bg">
@@ -20,13 +20,14 @@
             <a href="index.html">Inicio</a>
             <a href="sobreMi.html">Sobre Mi</a>
             <a href="miTrabajo.html">Mi Trabajo</a>
-            <a href="index.html">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </div>
     
     <section class="hero">
         <div class="contenido-hero">
-            <h2>Bienvenido a mi sitio!</h2> 
+            <h1 class="titulo">Desarrollo <span>Front-End y Back-End</span></h1>
+            <h2>Hola! Soy Paul.</h2> 
             <div class="ubicacion">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"/>
@@ -36,10 +37,11 @@
                 <p>Montevideo, Uruguay</p>
             </div>
             <a class="boton" href="#contacto">Contactar</a>
+                <a class="boton-secundario" href="sobreMi.html">Sobre Mi</a>
         </div> <!-- .contenido-hero --> 
     </section>
 
-    <main class="contenedor sombra">
+    <main class="contenedor sombra gris2">
         <h2>Mis Servicios</h2>
 
         <div class="servicios">
@@ -54,7 +56,7 @@
                         <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
                     </svg>
                 </div>
-                <p>Diseño Web a través de HTML, CSS, y lenguajes de programacion como JavaScript. </p>
+                <p>Diseño Web a través de HTML, CSS, y lenguajes de programación como JavaScript. </p>
             </section>
         
             <section class="servicio">
@@ -67,7 +69,7 @@
                         <line x1="4" y1="12" x2="20" y2="12" />
                       </svg>
                 </div>
-                <p> Aplicaciones para windows principalmente usando lenguajes como C#, Java, SQl, y algunas herramientas como Git.</p>
+                <p> Aplicaciones para windows principalmente usando lenguajes como C#, Java, SQL, y algunas herramientas como Git.</p>
             </section>
 
             <section class="servicio">
@@ -81,44 +83,18 @@
                         <line x1="11" y1="15" x2="13" y2="15" />
                     </svg>
                 </div>
-                <p>Desarrollo de e-commerce con HTML, CSS, Javascript, SQL, etc.</p>
+                <p>Desarrollo de e-commerce con HTML, CSS, Javascript, SQL.</p>
             </section>
            
+            <h2 id="contacto">Contacto</h2>
         </div> <!--.servicios-->
     
         <section class="contacto-container">
-            <h2 id="contacto">Contacto</h2>
 
-            <div class="container-icons">
-                <p><strong> Puedes usar mis redes:</strong></p>
-                <a class="boton" href="https://www.linkedin.com/in/PaulCJ2001">
-                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="4" y="4" width="16" height="16" rx="2" />
-                        <line x1="8" y1="11" x2="8" y2="16" />
-                        <line x1="8" y1="8" x2="8" y2="8.01" />
-                        <line x1="12" y1="16" x2="12" y2="11" />
-                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                      </svg>
-                </a>
-                <a class="boton" href="https://wa.me/+59894799799">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                      <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                    </svg>                
-                </a>
-                <a class="boton" href="mailto:paulcj2001@hotmail.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <polyline points="3 7 12 13 21 7" />
-                  </svg>
-                </a>
-            </div>
+            
             <form class="formulario">
                 <fieldset>
-                    <legend>O Contactame llenando todos los campos</legend>
+                    <legend>Contactame llenando todos los campos.</legend>
 
                     <div class="contenedor-campos">
                         <div class="campo">
@@ -147,8 +123,33 @@
                     </div>
                 </fieldset>
             </form>
-        </section>
+            <div class="container-icons sombra">
+                <p><strong> O puedes usar mis redes!</strong></p>
+                <svg class="boton svg-redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <a href="https://www.linkedin.com/in/PaulCJ2001"></a>
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg>
+                <svg class="boton svg-redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <a href="https://wa.me/+59894799799"></a>
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                      <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                    </svg>                
 
+                    <svg class="boton svg-redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <a  href="mailto:paulcj2001@hotmail.com"></a>
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                      </svg>
+            </div>
+        </section>
+        <script src="js/scripts.js"></script>
     </main>
     
     <footer class="footer">
