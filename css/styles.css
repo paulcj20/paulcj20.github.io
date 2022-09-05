@@ -42,6 +42,11 @@ body {
     max-width: 120rem;
     margin: 0 auto;
 }
+
+.columns {
+    display: flex;
+    flex-direction: column;
+}
 .boton {
     background-color: var(--secundario);
     color: var(--blanco);
@@ -78,7 +83,7 @@ body {
 /* Tipografia */
 h1 {
     font-size: 3.8rem;
-   
+    
     
 }
 h2 {
@@ -144,7 +149,7 @@ h1,h2,h3 {
     color: var(--oscuro);
 }
 
-/* Hero */
+/*? Hero ?*/
 .hero {
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
@@ -153,6 +158,8 @@ h1,h2,h3 {
     position: relative;
     background-position: center;
     margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-end;
 }
 .contenido-hero {
     position: absolute;
@@ -178,9 +185,23 @@ h1,h2,h3 {
 
 
 .boton-secundario {
-    align-items: flex-end;
-    justify-content: end;
-    flex-direction: column;
+   margin: 1rem 1rem;
+   text-decoration: none;
+   padding: .5rem .5rem;
+   font-size: 1.7rem;
+   color: var(--gris);
+   border-radius: 1rem;
+   transition: .2s;
+    
+   width: auto;
+}
+
+.boton-secundario:hover {
+    color: var(--grisClaro);
+    cursor: pointer;
+    background-color: var(--gris2);
+    transition: .2s;
+    
 }
 
 /** Servicios **/
@@ -253,13 +274,16 @@ h1,h2,h3 {
     margin-bottom: 1rem;
 }
 .campo label {
-    color: var(--blanco);
+    color: var(--secundario);
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
+
 }
 .campo textarea {
     height: 20rem;
+    border-style: none;
+    color: var(--gris);
 }
 
 .input-text {
@@ -267,33 +291,121 @@ h1,h2,h3 {
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
+    background-color: #1d1d1d;
+    
 }
 
 .container-icons {
     text-align: center;
     padding: 20px 20px;
     border:solid 1px;
-    margin: 10px 10px;
+    margin: 10px 0px;
     border-radius: 20px;
     color: var(--secundario);
     width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
-    margin: auto; 
+    margin: 0 2rem; 
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
     
 }
 
+.links {
+    border-style: none;
+    background-color: var(--oscuro);
+    margin: 0 0;
+}
+@media (min-width: 990px) {
+    .contacto-container {
+        display: flex;
+        flex-direction: row;
+        
+        justify-content:center;
+        align-items: center;
+        vertical-align: super;
+    }
+
+    .formulario {
+        
+        margin: 0 4rem;
+        margin-left: 4rem;
+    }
+
+    .container-icons {
+        
+        
+        width: auto;
+        flex-direction: column;
+    }
+
+    .links {
+        margin-bottom: 2rem;
+        width: 246px;
+        
+    }
+
+    .botones-contacto {
+        
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        height: auto;
+        width: 246px;
+        
+        
+    }
+}
+
+.botones-contacto {
+    background-color: var(--gris2);
+    width: auto;
+    height: auto;
+}
 a .boton{
     text-decoration: none;
     margin: 0px 40px;
     padding: 0px 40px; 
     height:100px ;    
 }
-
-.contacto-container {
-    display: flex;
-    flex-direction: row;
+@media (max-width:990px) {
+    .contacto-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+    }
     
+    .links {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    
+    .container-icons {
+        
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 1rem;
+    }
+
+    .botones-contacto {
+        margin: 1rem;
+        width: auto;
+    }
+
+    .botones-secundario {
+        margin: 2rem 1rem;
+    }
+
+    .svg-redes {
+        margin: 0 .5rem;
+    }
 }
+
+
 
 
 /** Footer **/
@@ -360,7 +472,7 @@ a .boton{
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1190px) {
     
     .contenedor-grid  {
         display: grid; 
@@ -386,4 +498,12 @@ a .boton{
         align-items: center;
     }
 
+}
+
+@media (max-width: 768px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template-columns:1fr;
+        margin: 0 4rem;
+    }
 }
