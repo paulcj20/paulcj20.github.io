@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
-    <script src="js/scripts.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -95,35 +95,39 @@
         <h2 id="contacto">Contacto</h2>
         <section class="contacto-container">
 
-            
-            <form class="formulario">
+    
+            <form class="formulario sombra">
                 <fieldset>
                     <legend>Contactame llenando todos los campos.</legend>
 
                     <div class="contenedor-campos">
                         <div class="campo">
                             <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                            <input class="input-text nombreIn" type="text" placeholder="Tu Nombre">
                         </div>
 
                         <div class="campo">
                             <label>Teléfono</label>
-                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                            <input class="input-text telIn" type="tel" placeholder="Tu Teléfono">
                         </div>
 
                         <div class="campo">
                             <label>Correo</label>
-                            <input class="input-text" type="email" placeholder="Tu Email">
+                            <input class="input-text correoIn" type="email" placeholder="Tu Email">
                         </div>
                 
                         <div class="campo">
                             <label>Mensaje</label>
-                            <textarea class="input-text"></textarea>
+                            <textarea class="input-text mensajeIn"></textarea>
                         </div>
                     </div> <!-- .contenedor-campos -->
 
                     <div class="alinear-derecha flex">
-                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                        <input class="boton w-sm-100 submit" type="submit" value="Enviar">
+                    </div>
+
+                    <div class="alerta">
+                        <p class="texto-alerta"></p>
                     </div>
                 </fieldset>
             </form>

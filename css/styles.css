@@ -13,6 +13,8 @@ html {
     box-sizing: border-box; /* Hack para Box Model **/
     scroll-snap-type: y mandatory;
 }
+
+
 /** Scroll Snap**/
 /*
 .servicios,
@@ -30,10 +32,9 @@ body {
     font-family: 'Krub', sans-serif;
     background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% );
     color: var(--grisClaro);
+    
 }
-.text-center {
-    text-align: center;
-}
+
 .gris2 {
     background-color: #1d1d1d !important;
     opacity: 98% ;
@@ -74,7 +75,7 @@ body {
 }
 
 .sombra {
-    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    box-shadow: 1px 5px 15px 1px rgba(112,112,112,0.48);
     background-color: #eee;
     padding: 2rem;
     border-radius: 1rem;
@@ -238,7 +239,7 @@ h1,h2,h3 {
 
 /** Contacto **/
 .formulario {
-    background-color: var(--gris);
+    background-color: var(--oscuro);
     width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
     margin: 0 auto;
     padding: 2rem;
@@ -256,7 +257,9 @@ h1,h2,h3 {
     margin-bottom: 2rem;
     color: var(--primario);
 }
-
+.texto-alerta {
+    color: var(--gris);
+}
 @media (min-width: 768px) {
     .contenedor-campos {
         display: grid;
@@ -284,6 +287,7 @@ h1,h2,h3 {
     height: 20rem;
     border-style: none;
     color: var(--gris);
+    resize: none;
 }
 
 .input-text {
@@ -314,6 +318,7 @@ h1,h2,h3 {
     border-style: none;
     background-color: var(--oscuro);
     margin: 0 0;
+    position: relative;
 }
 @media (min-width: 990px) {
     .contacto-container {
@@ -498,6 +503,8 @@ a .boton{
         align-items: center;
     }
 
+    
+
 }
 
 @media (max-width: 768px) {
@@ -506,4 +513,21 @@ a .boton{
         grid-template-columns:1fr;
         margin: 0 4rem;
     }
+
+    main {
+        width: 100%;
+        padding:0 0;
+        margin: 0 0!important;
+        
+    }
+
+    .contenido-principal {
+        text-align: center;
+    }
+}
+
+
+
+ul {
+    margin-left: 0;
 }

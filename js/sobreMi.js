@@ -37,3 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(botones2.removeAttribute('hidden'), 500);
     
 })
+
